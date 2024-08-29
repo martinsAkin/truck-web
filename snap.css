@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Epilogue", sans-serif;
+ user-select: none;
+}
+body{
+ background-color: hsl(0, 0%, 98%);
+}
+.container{
+ padding: 0;
+}
+.headline{
+ display: flex;
+ gap: 1rem;
+ justify-content: space-between;
+ padding: 1rem 2rem;
+ text-align: center;
+ align-items: center;
+ width: 100%;
+ font-size: 17px;
+}
+.headline ol{
+ list-style-type: none;
+ display: flex;
+ color: hsl(0, 0%, 41%);
+ gap: 1rem;
+ cursor: pointer;
+ font-weight: 600;
+}
+ ol a:hover{
+  color: white;
+  background-color: blue;
+  width: 25rem;
+  padding: 0.5em 0.5em;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out ;
+ }
+.seeTrucks:hover{
+ color: white;
+ background-color: black;
+ padding: 1rem;
+}
+a{
+text-decoration: none;
+color: hsl(0, 0%, 41%) ;
+}
+.seeTrucks{
+ padding: 0.6rem;
+ border-radius: 15px;
+ outline: none;
+ background-color: transparent;
+ border: 1px solid grey;
+}
+.seeTrucks:hover{
+  font-size: small;
+
+}
+main{
+ margin-top: 2rem;
+ padding: 0 3rem 0 13rem;
+ display: flex;
+ gap: 5rem;
+}
+.description{
+ margin-top: 2rem;
+}
+.description h1{
+ font-weight: 900;
+ line-height: 1;
+ font-size: 60px;
+}
+.learnMore-btn{
+ display: block;
+ margin-top: 3rem;
+ padding: 0.9rem 1rem;
+ background-color: hsl(0, 0%, 8%);
+ color: white;
+ border-radius: 10px;
+ border: none;
+ outline: none;
+ box-shadow: 3px 6px 3px grey;
+}
+.learnMore-btn:hover{
+ background: white;
+ color: black;
+ border: 1px solid black;
+ font-weight: 800;
+}
+.left-headline{
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+}
+.right-headline{
+ /* display: flex; */
+ font-weight: 600;
+ color: hsl(0, 0%, 41%);
+ gap: 1rem;
+ text-align: center;
+ align-items: center;
+}
+.right-headline:hover a{
+  background: none;
+}
+.menu{
+ display: none;
+}
+.description h1 span{
+ display: block;
+}
+.imageMobile{
+ display: none;
+}
+.information{
+ color: hsl(0, 0%, 41%);
+ margin-top: 2rem;
+ width: 23rem;
+}
+aside img{
+ height: 30rem;
+}
+.sponsors{
+ display: flex;
+ gap: 1rem;
+ height: 1.6rem;
+ margin-top: 6rem;
+}
+.features{
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ background-color: white;
+ margin-top: 1rem;
+ border: 1px solid gainsboro;
+ padding: 0.8rem;
+ left: 6rem;
+ position: absolute;
+ border-radius: 10px;
+ box-shadow: 5px 5px 15px grey;
+ display: none;
+}
+#features:hover .features{
+ display: block;
+}
+.company{
+ display: flex;
+ flex-direction: column;
+ background-color: white;
+ margin-top: 1rem;
+ border: 1px solid gainsboro;
+ padding: 0.8rem;
+ left: 16rem;
+ position: absolute;
+ border-radius: 10px;
+ box-shadow: 5px 5px 15px grey;
+ display: none;
+}
+#company:hover .company{
+ display: block;
+}
+.features div:hover{
+ background-color: aqua;
+}
+.company div:hover{
+ background-color: aqua;
+}
+#showcase{
+  margin: 6rem 2rem;
+}
+#showcase img{
+  height: 25rem;
+  width: 30rem;
+  border-radius: 10px;
+}
+.truck{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+#showcase .Truck_information{
+  font-size: 20px;
+  font-family: 900;
+  margin-top: 5rem;
+  width: 30rem;
+}
+.Truck_information h1{
+  font-size: 50px;
+}
+.Truck_information .desc{
+  font-weight: 600;
+  font-size: 20px;
+}
+.price{
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+}
+.readMore{
+  display: none;
+}
+.desc:hover .readMore{
+  display: block;
+}
+.interest{
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+}
+.interest:hover{
+  background-color: white;
+  color: black;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .left-headline ol{
+    display: none;    
+  }
+  .seeTrucks{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  .description{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .description h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .description h1 span{
+    display: inline;
+  }
+  aside img{
+    width: 20rem;
+    height: 18rem;
+  }
+  .learnMore-btn{
+    margin-top:1rem;
+  }
+
+}
+

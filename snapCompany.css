@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Rubik', sans-serif;
+ user-select: none;
+}
+/* company styling */
+.companyContainer{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ padding: 3rem 5rem;
+ gap: 2rem;
+}
+#company{ 
+ background-color: white;
+ border-radius: 15px;
+ border: 2px white solid;
+ padding: 0.6rem;
+}
+#ourGoals{
+ border-radius: 15px;
+ border: 2px white solid;
+ padding: 0.6rem;
+}
+#policy{
+ border-radius: 15px;
+ border: 2px white solid;
+ padding: 0.6rem;
+}
+#contactUs{
+ width: 50rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 10rem;
+}
+#contactUs div{
+ display: flex;
+ list-style-type: none;
+ font-weight: 700;
+ font-size: 30px;
+ gap: 1.5rem;
+ padding-top: 1rem;
+}
+#contactUs div i{
+ font-weight: 900;
+}
+#contactUs div a{
+ color: black;
+ text-decoration: none;
+}
+#contactUs div a:hover{
+ text-decoration: underline;
+}
